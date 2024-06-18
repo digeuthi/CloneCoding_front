@@ -1,0 +1,62 @@
+div {
+    display: flex;
+    justify-content: sapce-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+div {
+    background: red;
+}
+
+span {
+    background: blue;
+}
+
+.test {
+    display: block;
+    padding: 10px;
+    margin: 20px;
+    padding-left: 20px;
+    padding-right: 50px;
+    padding-top: 100px;
+    /* padding-bottom : 150px width: fit-content;
+    max-width: 200px; */
+}
+
+div {
+    font-size: 5rem;
+}
+
+.parent {
+    color: red;
+}
+
+.child {
+    color: blue;
+}
+
+.des {
+    color: yellow;
+}
+
+.parent {
+    color: orange;
+}
+
+.parent div {
+    color: purple;
+}
+
+.parent>div {
+    color: black;
+}
+
+.child.me {
+    color: pink;
+}
