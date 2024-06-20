@@ -1,0 +1,44 @@
+header>.inner {
+    /*h1과 nav의 정렬을 위함*/
+    /*class(.뒤의 내용이 class)는 div의 구분을 위해서 이름을 지정 header 내부의 모든 div에 지정, >사용시 한단계*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*수직정렬*/
+    max-width: 1000px;
+    /*사이즈를 크게해도 이 이상 커지지않는다*/
+    margin: 0 auto;
+    /*수평 가운데 정렬*/
+}
+
+header ul {
+    display: flex;
+    /*정렬사용*/
+    list-style: none;
+}
+
+header li {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 12px;
+    color: black;
+    /*a 태그에 적용안되면 따로 빼서 적용시키면된다*/
+}
+
+header li a {
+    color: black;
+    text-decoration: none;
+}
+
+header h1 {
+    color: #7a583a;
+    font-size: 20px;
+}
+
+header li:hover a {
+    /*마우스 올렸을때의 a 태그에 스타일 적용*/
+    color: #7a583a;
+    border-bottom: 4px solid #7a583a;
+    padding-bottom: 20px;
+    /*밑줄과 텍스트 사이의 간격을 넣는것*/
+}
