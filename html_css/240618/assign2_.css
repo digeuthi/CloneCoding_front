@@ -1,0 +1,70 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E2E1DF;
+}
+
+.inner {
+    padding: 1rem;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    display: block;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    /* 너비 설정 */
+    height: 50px;
+    /* 높이 설정 */
+}
+
+button:hover {
+    background: #ccc;
+}
+
+.required {
+    color: red;
+}
+
+.choose {
+    color: #979494;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    /* 수직 중앙 정렬 */
+    margin-bottom: 10px;
+}
+
+.input label {
+    flex: 1;
+    /* 레이블이 남은 공간을 모두 차지 */
+    margin-right: 10px;
+    /* 레이블과 입력창 사이의 간격 */
+    white-space: nowrap;
+    /*긴 문장도 한줄에 표시*/
+}
+
+.input input {
+
+    padding: 8px;
+    /* 내부 여백 */
+    border: 1px solid #484848;
+    /* 테두리 스타일 */
+    border-radius: 4px;
+    /* 테두리 둥글기 설정 */
+    font-size: 16px;
+    /* 글자 크기 */
+}
+
+.checks {
+    display: flex;
+    margin-bottom: 10px;
+    /* 하단 여백 */
+}
