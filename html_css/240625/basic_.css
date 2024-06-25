@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header>.inner {
+    /*h1과 nav의 정렬을 위함*/
+    /*class(.뒤의 내용이 class)는 div의 구분을 위해서 이름을 지정 header 내부의 모든 div에 지정, >사용시 한단계*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*수직정렬*/
+    max-width: 1000px;
+    /*사이즈를 크게해도 이 이상 커지지않는다*/
+    margin: 0 auto;
+    /*수평 가운데 정렬*/
+}
+
+header ul {
+    display: flex;
+    /*정렬사용*/
+    list-style: none;
+}
+
+header li {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 12px;
+    color: black;
+    /*a 태그에 적용안되면 따로 빼서 적용시키면된다*/
+}
+
+header li a {
+    color: black;
+    text-decoration: none;
+}
+
+header h1 {
+    color: #7a583a;
+    font-size: 20px;
+}
+
+header li:hover a {
+    /*마우스 올렸을때의 a 태그에 스타일 적용*/
+    color: #7a583a;
+    border-bottom: 4px solid #7a583a;
+    padding-bottom: 20px;
+    /*밑줄과 텍스트 사이의 간격을 넣는것*/
+}
+
+/*20240625*/
+
+/* .banner{
+    width : 100%;
+    position : relative;
+    /*relative를 주면 겹쳐진다*/
+/* 
+  .background{
+    content :"";
+    position : absolute; /*겹치려는 경우*/
+/*   backgound-image : url('https://t1.daumcdn.net/cfile/tistory/99C0D8475BC9C39F28');
+    width : 100%;
+    height : 100%;
+  } */
+
+/* .wrap{
+    display : flex;
+    position : absolute;
+    justify-content : space-between;
+    width : 100%;
+    max-width : 1000px;
+  } */
+
+/* .content{
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+    gap : 10px;
+  } */
+
+section.banner {
+    position: relative;
+    /*겹치는 요소 최상단에 relative를 지정해줘야 꼬이지않는다. 기준이 되는 지점에 relative*/
+    height: 500px;
+    width: 100%;
+}
+
+section.banner .background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: '';
+    background-image: url('https://t1.daumcdn.net/cfile/tistory/99C0D8475BC9C39F28');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*이미지가 가득채우게 하기위해서 cover*/
+}
+
+section.banner .background:after {
+    /*background 이후의 필터를 설정해주는것*/
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: black;
+    opacity: 0.2;
+}
+
+.banner .wrap {
+    /*content 내용을 맨 위로 올리기위해서 기본인 0보다 높은 숫자를 지정해서 올려줌, 맨위로 올리기 같은건가*/
+    z-index: 1;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    /*겹치는걸 사용하려면 top~이하를 쓴다*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*중심축을 옮기는것*/
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
