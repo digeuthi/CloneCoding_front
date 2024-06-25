@@ -1,0 +1,51 @@
+section.banner {
+    position: relative;
+    /*겹치는 요소 최상단에 relative를 지정해줘야 꼬이지않는다. 기준이 되는 지점에 relative*/
+    height: 500px;
+    width: 100%;
+}
+
+section.banner .background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: '';
+    background-image: url('https://t1.daumcdn.net/cfile/tistory/99C0D8475BC9C39F28');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*이미지가 가득채우게 하기위해서 cover*/
+}
+
+section.banner .background:after {
+    /*background 이후의 필터를 설정해주는것*/
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: black;
+    opacity: 0.2;
+}
+
+.banner .wrap {
+    /*content 내용을 맨 위로 올리기위해서 기본인 0보다 높은 숫자를 지정해서 올려줌, 맨위로 올리기 같은건가*/
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    /*겹치는걸 사용하려면 top~이하를 쓴다*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*중심축을 옮기는것*/
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}

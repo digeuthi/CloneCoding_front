@@ -50,54 +50,26 @@ header li:hover a {
 
 /*20240625*/
 
-/* .banner{
-    width : 100%;
-    position : relative;
-    /*relative를 주면 겹쳐진다*/
-/* 
-  .background{
-    content :"";
-    position : absolute; /*겹치려는 경우*/
-/*   backgound-image : url('https://t1.daumcdn.net/cfile/tistory/99C0D8475BC9C39F28');
-    width : 100%;
-    height : 100%;
-  } */
-
-/* .wrap{
-    display : flex;
-    position : absolute;
-    justify-content : space-between;
-    width : 100%;
-    max-width : 1000px;
-  } */
-
-/* .content{
-    display : flex;
-    flex-direction : column;
-    justify-content : center;
-    align-items : center;
-    gap : 10px;
-  } */
-
-section.banner {
+.banner {
     position: relative;
-    /*겹치는 요소 최상단에 relative를 지정해줘야 꼬이지않는다. 기준이 되는 지점에 relative*/
+    /*relative를 주면 겹쳐진다*/
     height: 500px;
     width: 100%;
 }
 
-section.banner .background {
+.background {
     width: 100%;
     height: 100%;
-    position: absolute;
     content: '';
+    position: absolute;
+    /*겹치려는 경우*/
     background-image: url('https://t1.daumcdn.net/cfile/tistory/99C0D8475BC9C39F28');
     background-repeat: no-repeat;
     background-size: cover;
     /*이미지가 가득채우게 하기위해서 cover*/
 }
 
-section.banner .background:after {
+.background:after {
     /*background 이후의 필터를 설정해주는것*/
     content: '';
     width: 100%;
@@ -107,12 +79,11 @@ section.banner .background:after {
     opacity: 0.2;
 }
 
-.banner .wrap {
+.wrap {
     /*content 내용을 맨 위로 올리기위해서 기본인 0보다 높은 숫자를 지정해서 올려줌, 맨위로 올리기 같은건가*/
     z-index: 1;
-    position: absolute;
-    z-index: 1;
     display: flex;
+    position: absolute;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -128,6 +99,7 @@ section.banner .background:after {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     align-items: center;
     gap: 10px;
 }
