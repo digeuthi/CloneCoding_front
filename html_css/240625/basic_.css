@@ -112,8 +112,18 @@ header li:hover a {
 }
 
 .wrap a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid white;
+    color: white;
+}
 
-    justify-content: space-between;
+.wrap a:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid white;
+    color: white;
 }
 
 .content {
