@@ -153,6 +153,14 @@ header li:hover a {
     text-decoration: none;
 }
 
+.cover-thumbnail-list-1,
+.cover-special-contents,
+.cover-thumbnail-list-2,
+.special-contents .pagination {
+    padding-left: 34px;
+    padding-right: 34px;
+}
+
 .cover-thumbnail-list-1 {
     overflow: hidden;
     max-width: 1200px;
@@ -219,6 +227,26 @@ li {
     color: #666;
     -webkit-transition: color .2s;
     transition: color .2s;
+}
+
+.cover-special-contents ul li {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.cover-special-contents ul li .thum img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cover-special-contents {
+    max-width: 1200px;
+    margin: 71px auto 80px;
+}
+
+.cover-special-contents li {
+    display: flex;
 }
 
 section.special-contents .bg {
